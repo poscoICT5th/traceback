@@ -7,10 +7,7 @@ import org.springframework.stereotype.Service;
 
 import Pack.vo.TestVo;
 
-@Service
 public class TestService {
-    @Autowired
-
     public List<TestVo> selectTest() {
         return null;
     }

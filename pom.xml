@@ -45,10 +45,10 @@
 			<scope>provided</scope>
 		</dependency>
 		<!-- 추가 디펜던시-->
-		<dependency>
+<!--		<dependency>
 		    <groupId>org.springframework.boot</groupId>
 		    <artifactId>spring-boot-starter-jdbc</artifactId>
-		</dependency>
+		</dependency>-->
 <!--		<dependency>
 			<groupId>org.mariadb.jdbc</groupId>
 			<artifactId>mariadb-java-client</artifactId>
@@ -72,23 +72,11 @@
 		<dependency>
 		    <groupId>org.springframework.boot</groupId>
 		    <artifactId>spring-boot-starter-data-mongodb</artifactId>
-		</dependency>
-		
-		<dependency> 
-		  <groupId>org.springframework.data</groupId> 
-		  <artifactId>spring-data-mongodb</artifactId> 
-		  <version>3.3.0</version> 
-		</dependency> 
-		         
-		<dependency> 
-		  <groupId>org.mongodb</groupId> 
-		  <artifactId>mongodb-jdbc</artifactId> 
-		  <version>1.0.3</version> 
 		</dependency> 
 	</dependencies>
 
 	<build>
-		<finalName>import</finalName>
+		<finalName>traceback</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
