@@ -1,5 +1,6 @@
 package Pack.vo;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -34,7 +35,7 @@ public class TraceDTO {
 		this.amount = receiveTraceDTO.getAmount();
 		this.stock_quality_status = receiveTraceDTO.getStock_quality_status();
 		this.stock_cause = receiveTraceDTO.getStock_cause();
-		this.consumed = Collections.EMPTY_LIST;
+		this.consumed = new ArrayList<>();
 	}
 	
 	public void addConsumed(TraceDTO consumedInfo) {
