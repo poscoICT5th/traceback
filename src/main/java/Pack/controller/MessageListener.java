@@ -50,11 +50,10 @@ public class MessageListener {
 			tracebackService.insert(traceDTO);
 		} else if (receiveCMD.equals("update")) {
 			System.out.println("from update");
-			tracebackService.updateByLotNo();
+			tracebackService.updateByLotNo(receiveTraceDTO);
 		}else {
 			System.out.println("else dd");
 		}			
-		tracebackService.insert(traceDTO);
 		System.out.println("다시 listen중");
 	}
 }
