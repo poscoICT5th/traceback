@@ -1,2 +1,2 @@
 # traceback
-trace readme
+trace readme add
