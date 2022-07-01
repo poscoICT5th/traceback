@@ -61,6 +61,7 @@ public class MainController {
     
     @GetMapping("/")
     public List<TraceDTO> selectAll(){
+    	System.out.println("traceback get all");
     	return tracebackService.selectAll();
     }
     
