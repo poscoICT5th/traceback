@@ -39,7 +39,10 @@ public class TracebackService {
     }
     
     public TraceDTO insert(TraceDTO traceDTO) {
-    	return mongoTemplate.insert(traceDTO);
+    	if (selectByLotNo(traceDTO.getLot_no()) == null) {
+    		return mongoTemplate.insert(traceDTO);    		
+    	}
+		return null;
     }
 
 	public BulkWriteResult updateByLotNo(ReceiveTraceDTO receiveTraceDTO) {
