@@ -22,4 +22,5 @@ public class ReceiveTraceDTO {
 	String stock_quality_status;
 	String stock_cause;
 	List<ItemInfo> consumed_infos;
+	List<String> statusChangeList;
 }
