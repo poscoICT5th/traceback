@@ -21,6 +21,7 @@ public class ReceiveTraceDTO {
 	int amount;
 	String stock_quality_status;
 	String stock_cause;
+	String inventory_date;
 	List<ItemInfo> consumed_infos;
 	List<String> statusChangeList;
 }
