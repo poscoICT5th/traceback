@@ -52,7 +52,7 @@ public class TracebackService {
     		query.addCriteria(Criteria.where("lot_no").is(lot_no));
     		Update update = new Update();
     		update.set("stock_quality_status", receiveTraceDTO.getStock_quality_status());
-    		update.set("stock_cause", receiveTraceDTO.getStock_cause());
+    		update.set("stock_cause", receiveTraceDTO.getStatus_cause());
     		ops.updateMulti(query, update);
     	}
     	BulkWriteResult results = ops.execute();
