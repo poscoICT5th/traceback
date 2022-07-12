@@ -25,7 +25,7 @@ public class TraceDTO {
 	String item_code;
 	int amount;
 	String stock_quality_status;
-	String stock_cause;
+	String status_cause;
 	String inventory_date;
 	List<TraceDTO> consumed;
 	
@@ -35,7 +35,7 @@ public class TraceDTO {
 		this.item_code = receiveTraceDTO.getItem_code();
 		this.amount = receiveTraceDTO.getAmount();
 		this.stock_quality_status = receiveTraceDTO.getStock_quality_status();
-		this.stock_cause = receiveTraceDTO.getStock_cause();
+		this.status_cause = receiveTraceDTO.getStatus_cause();
 		this.inventory_date = receiveTraceDTO.getInventory_date();
 		this.consumed = new ArrayList<>();
 	}
