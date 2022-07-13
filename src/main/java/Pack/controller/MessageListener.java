@@ -44,6 +44,9 @@ public class MessageListener {
 			List<ItemInfo> consumed_item_infos = receiveTraceDTO.getConsumed_infos();
 			for (ItemInfo itemInfo : consumed_item_infos) {
 				TraceDTO consumed_info = tracebackService.selectByLotNo(itemInfo.getLot_no());
+				if (consumed_info == null) {
+					continue;
+				}
 				consumed_info.setAmount(itemInfo.getAmount());
 				traceDTO.addConsumed(consumed_info);
 			}
